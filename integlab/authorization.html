@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова страницы">
+
+    <title>Вход или регистрация</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- scripts -->
+    <script src="js/libs.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+</head>
+
+    <body>
+        <section class="authorization">
+            <form action="#" class="authorization-form">
+                <div class="authorization__close">
+                    <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                </div>
+                <h1 class="authorization__title">Вход или регистрация</h1>
+                <input type="tel" placeholder="Телефон *" class="authorization__input">
+                <div class="checkbox">
+                    <input id="authorization-checkbox" type="checkbox" class="checkbox__input">
+                    <label for="authorization-checkbox" class="checkbox__label"></label>
+                    <div class="checkbox__text">
+                        Я согласен с условиями&nbsp;
+                        <div class="checkbox__link">
+                            <a href="">политики конфиденциальности</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn authorization__button">Получить код</button>
+            </form>
+        </section>
+    </body>
+</html>

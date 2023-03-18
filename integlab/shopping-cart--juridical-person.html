@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Описание страницы">
+    <meta name="keywords" content="Ключевые слова страницы">
+
+    <title>Оформление заказа</title>
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- scripts -->
+    <script src="js/libs.js" defer></script>
+    <script src="js/scripts.js" defer></script>
+</head>
+
+    <body>
+        <section class="order order--mb">
+            <div class="order-wrapper wrapper">
+                <div class="order-header">
+                    <h1 class="order__title">Оформление заказа</h1>
+                    <a href="tel:+78005003030" class="order__tel">8 800 500 30 30</a>
+                </div>
+                <div class="order-info">
+                    <form action="#" class="order-form">
+                        <h3 class="order-form__title">Персональные данные</h3>
+                        <div class="order-form-radio-buttons">
+                            <div class="order-form-radio-buttons__item">
+                                <input type="radio" name="order-form-radio" id="order-form-radio--1" class="order-form-radio-buttons__input">
+                                <label for="order-form-radio--1" class="order-form-radio-buttons__label"></label>
+                                <div class="order-form-radio-buttons__text">Частное лицо</div>
+                            </div>
+                            <div class="order-form-radio-buttons__item">
+                                <input type="radio" name="order-form-radio" id="order-form-radio--2" class="order-form-radio-buttons__input">
+                                <label for="order-form-radio--2" class="order-form-radio-buttons__label"></label>
+                                <div class="order-form-radio-buttons__text">Компания / ИП</div>
+                            </div>
+                        </div>
+                        <div class="order-form-inputs">
+                            <div class="order-form-inputs-container">
+                                <input type="text" class="order-form__input" placeholder="Имя *" required>
+                                <div class="order-form__signature">Имя *</div>
+                                <div class="order-form__error">!</div>
+                            </div>
+                            <div class="order-form-inputs-container">
+                                <input type="email" class="order-form__input" placeholder="E-mail *" required>
+                                <div class="order-form__signature">E-mail *</div>
+                                <div class="order-form__error">!</div>
+                            </div>
+                        </div>
+                        <div class="order-form__message">Важно! На указанный e-mail придет лицензионный ключ</div>
+                        <div class="order-form-inputs">
+                            <div class="order-form-inputs-container">
+                                <input type="tel" class="order-form__input" placeholder="Телефон *" required>
+                                <div class="order-form__signature">Телефон *</div>
+                                <div class="order-form__error">!</div>
+                            </div>
+                            <div class="order-form-inputs-container">
+                                <input type="text" class="order-form__input" placeholder="Ваш город *" required>
+                                <div class="order-form__signature">Ваш город *</div>
+                                <div class="order-form__error">!</div>
+                            </div>
+                            <div class="order-form-inputs-container">
+                                <input type="text" class="order-form__input" placeholder="ИНН *" required>
+                                <div class="order-form__signature">ИНН *</div>
+                                <div class="order-form__error">!</div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="order-promo">
+                        <button class="order-promo-btn">
+                            <div class="order-promo-btn__text">Промокод</div>
+                            <div class="order-promo-btn__plus">
+                                <svg><use xlink:href="imgs/sprite.svg#plus"></use></svg>
+                            </div>
+                        </button>
+                        <div class="order-promo-result">
+                            <div class="order-promo-result-total">
+                                <div class="order-promo-result__text">Итого</div>
+                                <div class="order-promo-result__price">49 800 ₽</div>
+                            </div>
+                            <div class="order-promo-result-product">
+                                <div class="order-promo-result__text">Товары (<span>2</span>)</div>
+                                <div class="order-promo-result__price">54 800 ₽</div>
+                            </div>
+                            <div class="order-promo-result-discount">
+                                <div class="order-promo-result__text">Скидка</div>
+                                <div class="order-promo-result__price">-5 000 ₽</div>
+                            </div>
+                            <button class="order-promo-result__btn btn">Оформить заказ</button>
+                            <div class="checkbox order-promo-result-checkbox">
+                                <input id="order-promo-result-checkbox--1" type="checkbox" class="checkbox__input--small">
+                                <label for="order-promo-result-checkbox--1" class="checkbox__label--small"></label>
+                                <div class="checkbox__text order-promo-result-checkbox__text">
+                                    Я согласен на обработку&nbsp;
+                                    <div class="checkbox__link order-promo-result-checkbox__link">
+                                        <a href="">персональных данных</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="order--mobile order--mobile-mb">
+            <div class="order-wrapper wrapper">
+                <h1 class="order__title">Оформление заказа</h1>
+                <div class="order-info">
+                    <form action="#" class="order-form">
+                        <h3 class="order-form__title">Персональные данные</h3>
+                        <div class="order-form-radio-buttons">
+                            <div class="order-form-radio-buttons__item">
+                                <input type="radio" name="order-form-radio" id="order-form-radio--3" class="order-form-radio-buttons__input">
+                                <label for="order-form-radio--3" class="order-form-radio-buttons__label"></label>
+                                <div class="order-form-radio-buttons__text">Частное лицо</div>
+                            </div>
+                            <div class="order-form-radio-buttons__item">
+                                <input type="radio" name="order-form-radio" id="order-form-radio--4" class="order-form-radio-buttons__input">
+                                <label for="order-form-radio--4" class="order-form-radio-buttons__label"></label>
+                                <div class="order-form-radio-buttons__text">Компания / ИП</div>
+                            </div>
+                        </div>
+                        <div class="order-form-inputs">
+                            <div class="order-form-inputs-container">
+                                <input type="text" class="order-form__input" placeholder="Имя *" required>
+                                <div class="order-form__signature">Имя *</div>
+                                <div class="order-form__error">!</div>
+                            </div>
+                            <div class="order-form-inputs-container">
+                                <input type="email" class="order-form__input" placeholder="E-mail *" required>
+                                <div class="order-form__signature">E-mail *</div>
+                                <div class="order-form__error">!</div>
+                            </div>
+                        </div>
+                        <div class="order-form__message">Важно! На указанный e-mail придет лицензионный ключ</div>
+                        <div class="order-form-inputs">
+                            <div class="order-form-inputs-container">
+                                <input type="tel" class="order-form__input" placeholder="Телефон *" required>
+                                <div class="order-form__signature">Телефон *</div>
+                                <div class="order-form__error">!</div>
+                            </div>
+                            <div class="order-form-inputs-container">
+                                <input type="text" class="order-form__input" placeholder="Ваш город *" required>
+                                <div class="order-form__signature">Ваш город *</div>
+                                <div class="order-form__error">!</div>
+                            </div>
+                            <div class="order-form-inputs-container">
+                                <input type="text" class="order-form__input" placeholder="ИНН *" required>
+                                <div class="order-form__signature">ИНН *</div>
+                                <div class="order-form__error">!</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment">
+            <div class="payment-wrapper wrapper">
+                <div class="payment-info">
+                    <form action="#" class="payment-form">
+                        <h3 class="payment-form__title">Способ оплаты</h3>
+                        <div class="payment-form-radio-buttons">
+                            <div class="payment-form-radio-buttons__item">
+                                <input type="radio" name="payment-form-radio" id="payment-form-radio--1" class="payment-form-radio-buttons__input">
+                                <label for="payment-form-radio--1" class="payment-form-radio-buttons__label"></label>
+                                <div class="payment-form-radio-buttons__btn">
+                                    <div class="payment-form-radio-buttons__img">
+                                        <img src="imgs/order/card.svg" alt="card">
+                                    </div>
+                                    <div class="payment-form-radio-buttons__text">Банковская карта</div>
+                                </div>
+                            </div>
+                            <div class="payment-form-radio-buttons__item">
+                                <input type="radio" name="payment-form-radio" id="payment-form-radio--2" class="payment-form-radio-buttons__input">
+                                <label for="payment-form-radio--2" class="payment-form-radio-buttons__label"></label>
+                                <div class="payment-form-radio-buttons__btn">
+                                    <div class="payment-form-radio-buttons__img">
+                                        <img src="imgs/order/sbp.svg" alt="sbp">
+                                    </div>
+                                    <div class="payment-form-radio-buttons__text">Система быстрых платежей</div>
+                                </div>
+                            </div>
+                            <div class="payment-form-radio-buttons__item">
+                                <input type="radio" name="payment-form-radio" id="payment-form-radio--3" class="payment-form-radio-buttons__input">
+                                <label for="payment-form-radio--3" class="payment-form-radio-buttons__label"></label>
+                                <div class="payment-form-radio-buttons__btn">
+                                    <div class="payment-form-radio-buttons__img">
+                                        <img src="imgs/order/yandex.svg" alt="yandex">
+                                    </div>
+                                    <div class="payment-form-radio-buttons__text">Яндекс деньги</div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="#" class="payment-form">
+                        <h3 class="payment-form__title">Подтверждение заказа</h3>
+                        <div class="payment-form__counter">В корзине 2 товара</div>
+                        <div class="payment-form-products">
+                            <div class="payment-form-products__item">
+                                <div class="payment-form-products__item-left">
+                                    <div class="payment-form-products__item-row">
+                                        <div class="payment-form-products__img">
+                                            <img src="imgs/order/product-1.jpg" alt="product">
+                                        </div>
+                                        <div class="payment-form-products__title">Адаптивный Интернет-магазин детских товаров «Kids-market 2.0»</div>
+                                    </div>
+                                    <div class="payment-form-products__counter counter">
+                                        <button class="decrement"></button>
+                                        <input class="value" type="number" value="10" min="0" max="999">
+                                        <button class="increment">
+                                            <svg><use xlink:href="imgs/sprite.svg#plus"></use></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="payment-form-products__item-right">
+                                    <div class="payment-form-products__price">
+                                        <div class="payment-form-products__price--new">19 990 ₽</div>
+                                        <div class="payment-form-products__price--old">24 900 ₽</div>
+                                    </div>
+                                    <div class="payment-form-products__close">
+                                        <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="payment-form-products__item">
+                                <div class="payment-form-products__item-left">
+                                    <div class="payment-form-products__item-row">
+                                        <div class="payment-form-products__img">
+                                            <img src="imgs/order/product-2.jpg" alt="product">
+                                        </div>
+                                        <div class="payment-form-products__title">Digital Web, Deluxe - многофункциональный интернет-магазин 2 в 1</div>
+                                    </div>
+                                    <div class="payment-form-products__counter counter">
+                                        <button class="decrement"></button>
+                                        <input class="value" type="number" value="100" min="0" max="999">
+                                        <button class="increment">
+                                            <svg><use xlink:href="imgs/sprite.svg#plus"></use></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="payment-form-products__item-right">
+                                    <div class="payment-form-products__price">
+                                        <div class="payment-form-products__price--single">24 990 ₽</div>
+                                    </div>
+                                    <div class="payment-form-products__close">
+                                        <svg><use xlink:href="imgs/sprite.svg#close"></use></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="payment-mobile">
+                    <div class="order-promo">
+                        <button class="order-promo-btn">
+                            <div class="order-promo-btn__text">Промокод</div>
+                            <div class="order-promo-btn__plus">
+                                <svg><use xlink:href="imgs/sprite.svg#plus"></use></svg>
+                            </div>
+                        </button>
+                        <div class="order-promo-result">
+                            <div class="order-promo-result-total">
+                                <div class="order-promo-result__text">Итого</div>
+                                <div class="order-promo-result__price">49 800 ₽</div>
+                            </div>
+                            <div class="order-promo-result-product">
+                                <div class="order-promo-result__text">Товары (<span>2</span>)</div>
+                                <div class="order-promo-result__price">54 800 ₽</div>
+                            </div>
+                            <div class="order-promo-result-discount">
+                                <div class="order-promo-result__text">Скидка</div>
+                                <div class="order-promo-result__price">-5 000 ₽</div>
+                            </div>
+                            <button class="order-promo-result__btn btn">Оформить заказ</button>
+                            <div class="checkbox order-promo-result-checkbox">
+                                <input id="order-promo-result-checkbox--2" type="checkbox" class="checkbox__input--small">
+                                <label for="order-promo-result-checkbox--2" class="checkbox__label--small"></label>
+                                <div class="checkbox__text order-promo-result-checkbox__text">
+                                    Согласие на обработку&nbsp;
+                                    <div class="checkbox__link order-promo-result-checkbox__link">
+                                        <a href="">персональных данных</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer-mini">
+    <div class="footer-mini-wrapper wrapper">
+        <div class="footer-mini-additionally">
+            <div class="footer-additionally__info">© 2016-2022 ООО «Integlab». Все права защищены</div>
+            <div class="footer-additionally-links">
+                <a href="" class="footer-additionally__link">Политика конфиденциальности</a>
+                <a href="" class="footer-additionally__link">Соглашение об использовании сайта</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer-mobile">
+    <div class="footer-mini-wrapper wrapper">
+        <div class="footer-mini-additionally">
+            <div class="footer-mini-additionally-links">
+                <a href="" class="footer-additionally__link">Политика конфиденциальности</a>
+                <a href="" class="footer-additionally__link">Соглашение об использовании сайта</a>
+            </div>
+            <div class="footer-additionally__info">© 2016-2022 ООО «Integlab». Все права защищены</div>
+        </div>
+    </div>
+</footer>
+    </body>
+</html>
