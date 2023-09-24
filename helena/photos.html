@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos</title>
+    <!-- Styles::Start-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    <!-- Styles::End-->
+</head>
+
+<body class="photos-page">
+    <div id="page">
+        <!-- Header::Start-->
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper">
+                    <div class="header-nav">
+                        <nav class="navigation">
+                            <ul>
+                                <li><a href="/helena/">Home</a></li>
+                                <li><a href="/helena/#works">Works</a></li>
+                                <li><a href="/helena/#about">About</a></li>
+                                <li><a href="/helena/#contacts">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="header-content"><a class="header__logo" href="/helena/"><img src="assets/images/logo.svg" alt="logo"></a>
+                        <div class="header__menu"><img src="assets/images/hamburger.svg" alt="menu"><img src="assets/images/close.svg" alt="close"></div>
+                        <div class="header-buttons"><a class="header-buttons__item" href="#popup-favorites" data-fancybox><img src="assets/images/heart.svg" alt="favorites"></a><a class="header-buttons__item" href="#popup-cart" data-fancybox><img src="assets/images/shopping-cart.svg" alt="shopping-cart"></a></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header::End-->
+        <!-- Main::Start-->
+        <main id="main">
+            <section class="photos">
+                <div class="container">
+                    <div class="works-links"><a class="works-links__item" href="/helena/paints.html">Paints</a>
+                        <div class="works-links__item active">Photos</div>
+                    </div>
+                    <div class="photos-wrapper">
+                        <div class="photos__title">soon...</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Main::End-->
+        <!-- Footer::Start-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__title">@helenakorotich</div>
+                <div class="footer-wrapper">
+                    <div class="footer-form">
+                        <form action="#">
+                            <div class="footer-form-inputs">
+                                <div class="footer-form-inputs__item">
+                                    <input type="text" placeholder="Name*">
+                                </div>
+                                <div class="footer-form-inputs__item">
+                                    <input type="text" placeholder="Email*">
+                                </div>
+                            </div>
+                            <div class="footer-form__textarea">
+                                <textarea placeholder="Message*"></textarea>
+                            </div>
+                            <div class="footer-form-accept">
+                                <label>
+                                    <input type="checkbox" name="acceptance_footer" checked><span class="footer-form-accept__checkbox"></span><span class="footer-form-accept__text">I agree to the processing and storage of my personal data</span>
+                                </label>
+                            </div>
+                            <div class="footer-form__btn">
+                                <input type="submit" value="Send message">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-nav">
+                            <div class="footer-nav-titles">
+                                <div class="footer-nav-titles__item">About</div>
+                                <div class="footer-nav-titles__item">Products</div>
+                                <div class="footer-nav-titles__item">Shops</div>
+                            </div>
+                            <nav class="footer-navigation">
+                                <ul>
+                                    <li><a href="/helena/">Homepage</a></li>
+                                    <li><a href="/helena/paints.html">Paints</a></li>
+                                    <li><a href="#popup-cart" data-fancybox>Cart</a></li>
+                                    <li><a href="/helena/#about">About me</a></li>
+                                    <li><a href="/helena/photos.html">Photos</a></li>
+                                    <li><a href="#popup-favorites" data-fancybox>Favorites</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="footer-contacts" id="contacts">
+                            <div class="footer-contacts__item">
+                                <div class="footer-contacts__title">Contact me</div>
+                                <div class="footer-contacts-block">
+                                    <div class="footer-contacts-block__title">Phone</div><a class="footer-contacts-block__link" href="tel:+7 (999) 999 99 99">+7 (999) 999 99 99</a>
+                                </div>
+                                <div class="footer-contacts-block">
+                                    <div class="footer-contacts-block__title">Email</div><a class="footer-contacts-block__link" href="mailto:helenakorotich@gmail.com">helenakorotich@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="footer-contacts__item">
+                                <div class="footer-contacts__title">Follow me</div>
+                                <div class="footer-contacts-block">
+                                    <div class="footer-contacts-block__title">Instagram</div><a class="footer-contacts-block__link" href="https://instagram.com/helena.korotich">helena.korotich</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-favorites" id="popup-favorites">
+                <div class="popup-favorites-wrapper">
+                    <div class="popup-favorites__title">Favorites</div>
+                    <div class="popup-favorites-products">
+                        <div class="popup-favorites-products-items">
+                            <div class="popup-favorites-products-items__row">
+                                <div class="popup-favorites-products-items-content">
+                                    <div class="popup-favorites-products-items__img"><img src="assets/images/paint-4.jpg" alt="product"></div>
+                                    <div class="popup-favorites-products-items-info">
+                                        <div class="popup-favorites-products-items-info__title">Green</div>
+                                        <button class="popup-favorites-products-items-info__btn">add to bag</button>
+                                    </div>
+                                </div>
+                                <div class="popup-favorites-products-items-price">
+                                    <div class="popup-favorites-products-items-price__heart"><img src="assets/images/heart-black.svg" alt="heart"></div>
+                                    <div class="popup-favorites-products-items-price__amount">149</div>
+                                    <div class="popup-favorites-products-items-price__currency">$</div>
+                                </div>
+                            </div>
+                            <div class="popup-favorites-products-items__row">
+                                <div class="popup-favorites-products-items-content">
+                                    <div class="popup-favorites-products-items__img"><img src="assets/images/paint-5.jpg" alt="product"></div>
+                                    <div class="popup-favorites-products-items-info">
+                                        <div class="popup-favorites-products-items-info__title">Red</div>
+                                        <button class="popup-favorites-products-items-info__btn">add to bag</button>
+                                    </div>
+                                </div>
+                                <div class="popup-favorites-products-items-price">
+                                    <div class="popup-favorites-products-items-price__heart"><img src="assets/images/heart-black.svg" alt="heart"></div>
+                                    <div class="popup-favorites-products-items-price__amount">149</div>
+                                    <div class="popup-favorites-products-items-price__currency">$</div>
+                                </div>
+                            </div>
+                            <div class="popup-favorites-products-items__row">
+                                <div class="popup-favorites-products-items-content">
+                                    <div class="popup-favorites-products-items__img"><img src="assets/images/paint-1.jpg" alt="product"></div>
+                                    <div class="popup-favorites-products-items-info">
+                                        <div class="popup-favorites-products-items-info__title">Blue</div>
+                                        <button class="popup-favorites-products-items-info__btn">add to bag</button>
+                                    </div>
+                                </div>
+                                <div class="popup-favorites-products-items-price">
+                                    <div class="popup-favorites-products-items-price__heart"><img src="assets/images/heart-black.svg" alt="heart"></div>
+                                    <div class="popup-favorites-products-items-price__amount">149</div>
+                                    <div class="popup-favorites-products-items-price__currency">$</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-favorites-products-buttons"><a class="popup-favorites-products-buttons__order" href="#popup-cart" data-fancybox>Go to cart</a><a class="popup-favorites-products-buttons__shopping" href="helena/paints.html">Continue shopping</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup-cart" id="popup-cart">
+                <div class="popup-cart-wrapper">
+                    <div class="popup-cart__title">Cart</div>
+                    <div class="popup-cart-products">
+                        <div class="popup-cart-products-items">
+                            <div class="popup-cart-products-items__row">
+                                <div class="popup-cart-products-items-content">
+                                    <div class="popup-cart-products-items__img"><img src="assets/images/paint-4.jpg" alt="product"></div>
+                                    <div class="popup-cart-products-items-info">
+                                        <div class="popup-cart-products-items-info__title">Green</div>
+                                        <div class="popup-cart-products-items-info__counter">
+                                            <button class="decrement">-</button>
+                                            <input class="value" type="number" value="1" min="0" max="9" readonly>
+                                            <button class="increment">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup-cart-products-items-price">
+                                    <div class="popup-cart-products-items-price__amount">149</div>
+                                    <div class="popup-cart-products-items-price__currency">$</div>
+                                </div>
+                            </div>
+                            <div class="popup-cart-products-items__row">
+                                <div class="popup-cart-products-items-content">
+                                    <div class="popup-cart-products-items__img"><img src="assets/images/paint-5.jpg" alt="product"></div>
+                                    <div class="popup-cart-products-items-info">
+                                        <div class="popup-cart-products-items-info__title">Red</div>
+                                        <div class="popup-cart-products-items-info__counter">
+                                            <button class="decrement">-</button>
+                                            <input class="value" type="number" value="1" min="0" max="9" readonly>
+                                            <button class="increment">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup-cart-products-items-price">
+                                    <div class="popup-cart-products-items-price__amount">149</div>
+                                    <div class="popup-cart-products-items-price__currency">$</div>
+                                </div>
+                            </div>
+                            <div class="popup-cart-products-items__row">
+                                <div class="popup-cart-products-items-content">
+                                    <div class="popup-cart-products-items__img"><img src="assets/images/paint-1.jpg" alt="product"></div>
+                                    <div class="popup-cart-products-items-info">
+                                        <div class="popup-cart-products-items-info__title">Blue</div>
+                                        <div class="popup-cart-products-items-info__counter">
+                                            <button class="decrement">-</button>
+                                            <input class="value" type="number" value="1" min="0" max="9" readonly>
+                                            <button class="increment">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="popup-cart-products-items-price">
+                                    <div class="popup-cart-products-items-price__amount">149</div>
+                                    <div class="popup-cart-products-items-price__currency">$</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup-cart-products-price">
+                            <div class="popup-cart-products-price__title">total price</div>
+                            <div class="popup-cart-products-price-total">
+                                <div class="popup-cart-products-price-total__amount">447</div>
+                                <div class="popup-cart-products-price-total__currency">$</div>
+                            </div>
+                        </div>
+                        <div class="popup-cart-products-buttons"><a class="popup-cart-products-buttons__order" href="/helena/order.html">Make an order</a><a class="popup-cart-products-buttons__shopping" href="/helena/paints.html">Continue shopping</a></div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer::End-->
+    </div>
+    <!-- Scripts::Start-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="assets/js/plugins/plugins.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- Scripts::End-->
+</body>
+
+</html>
